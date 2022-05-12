@@ -1,0 +1,11 @@
+
+[kafka]
+192.204.12.104 ansible_ssh_pass='root' ansible_ssh_user='root' kafka_broker_id=0  kafka_listener_hostname=192.204.12.104
+192.204.12.109 ansible_ssh_pass='root' ansible_ssh_user='root' kafka_broker_id=1  kafka_listener_hostname=192.204.12.109
+192.204.12.110 ansible_ssh_pass='root' ansible_ssh_user='root' kafka_broker_id=2  kafka_listener_hostname=192.204.12.110
+
+
+[zookeeper-nodes]
+192.204.12.104 ansible_ssh_pass='root' ansible_ssh_user='root' zookeeper_id=1 
+192.204.12.109 ansible_ssh_pass='root' ansible_ssh_user='root' zookeeper_id=2 
+192.204.12.110 ansible_ssh_pass='root' ansible_ssh_user='root' zookeeper_id=3 
