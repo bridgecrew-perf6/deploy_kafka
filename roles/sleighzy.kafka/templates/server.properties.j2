@@ -19,19 +19,31 @@
 
 ############################# Server Basics #############################
 
-default.replication.factor=3 # 默认数据同步给3个节点
-min.insync.replicas = 2 # 至少同步两个节点
-delete.topic.enable=true # 禁止删除topic
-message.max.bytes=5242880 # 5MB
-max.request.size=5242880 # 5MB
-replica.fetch.max.bytes=5242880 # 5MB
-auto.create.topics.enable=false # 禁止自动创建topic
-unclean.leader.election.enable = false # 防止数据丢失
-log.segment.ms = 7776000000 # 3个月
-retention.ms = 7776000000 # 3个月
-log.retention.bytes = -1 # 这是默认值 表示broker允许存储任意容量的数据
+# 默认数据同步给3个节点
+default.replication.factor=3 
+# 至少同步两个节点
+min.insync.replicas = 2 
+# 禁止删除topic
+delete.topic.enable=true 
+# 5MB
+message.max.bytes=5242880 
+# 5MB
+max.request.size=5242880 
+# 5MB
+replica.fetch.max.bytes=5242880 
+# 禁止自动创建topic
+auto.create.topics.enable=false 
+# 防止数据丢失
+unclean.leader.election.enable = false 
+# 3个月
+log.segment.ms = 7776000000 
+# 3个月
+retention.ms = 7776000000 
+# 这是默认值 表示broker允许存储任意容量的数据
+log.retention.bytes = -1 
 retention.bytes = -1
-auto.leader.rebalance.enable = false # 禁止定期rebalance
+# 禁止定期rebalance
+auto.leader.rebalance.enable = false 
 
 
 ###########
