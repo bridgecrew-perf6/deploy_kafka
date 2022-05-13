@@ -39,11 +39,11 @@ zookeeper_sync_limit: 5
 # The directory where ZooKeeper in-memory database snapshots and, unless specified in dataLogDir, the transaction log of updates to the database.
 # This location should be a dedicated disk that is ideally an SSD.
 # For more information, see the ZooKeeper Administration Guide (https://zookeeper.apache.org/doc/current/zookeeperAdmin.html).
-zookeeper_data_dir: /var/lib/zookeeper
+zookeeper_data_dir: /var/lib/zookeeper2
 # The location where the transaction log is written to. If you don’t specify this option, the log is written to dataDir.
 # By specifying this option, you can use a dedicated log device, and help avoid competition between logging and snapshots.
 # For more information, see the ZooKeeper Administration Guide (https://zookeeper.apache.org/doc/current/zookeeperAdmin.html).
-zookeeper_data_log_dir: /var/lib/zookeeper
+zookeeper_data_log_dir: /var/lib/zookeeper2
 
 # This is the port where ZooKeeper clients will listen on. This is where the Brokers will connect to ZooKeeper. Typically this is set to 2181.
 zookeeper_client_port: 2181

@@ -1,4 +1,5 @@
 - hosts: kafka
   roles:
     - role: sleighzy.kafka
-      kafka_zookeeper_connect: 192.204.12.104:2181,192.204.12.109:2181,192.204.12.110:2181
+      kafka_zookeeper_connect: 192.204.12.104:2181
+      kafka_data_log_dirs: /var/lib/kafka/logs2
